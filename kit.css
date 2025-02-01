@@ -44,6 +44,21 @@
   background-color: var(--color-secondary-transparent);
   border-radius: 3px;
   border: 2px solid var(--color-secondary-transparent-2);
+
+  &.mdf-block-info {
+    background-color: var(--color-info-transparent);
+    border-color: var(--color-info);
+  }
+
+  &.mdf-block-error {
+    background-color: var(--color-error-transparent);
+    border-color: var(--color-error);
+  }
+
+  &.mdf-block-success {
+    background-color: var(--color-success-transparent);
+    border-color: var(--color-success);
+  }
 }
 
 /* CTA */

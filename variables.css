@@ -15,6 +15,10 @@
   --color-tertiary-transparent-2: #482c687a;
 
   --color-error: #a43030;
-  --color-info: #045267;
+  --color-error-transparent: #a4303027;
+  --color-info: #167792;
+  --color-info-transparent: #16779227;
+  --color-success: #3c843f;
+  --color-success-transparent: #3c843f27;
   --color-text-muted: #595959;
 }
