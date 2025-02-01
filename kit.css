@@ -39,6 +39,13 @@
   color: var(--color-text-muted);
 }
 
+.mdf-block {
+  padding: 1rem;
+  background-color: var(--color-secondary-transparent);
+  border-radius: 3px;
+  border: 2px solid var(--color-secondary-transparent-2);
+}
+
 /* CTA */
 .mdf-link {
   color: var(--color-primary);
