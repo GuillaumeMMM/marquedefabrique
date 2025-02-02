@@ -32,55 +32,55 @@
 
 .mdf-highlighted {
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--mdf-color-primary);
 }
 
 .mdf-muted {
-  color: var(--color-text-muted);
+  color: var(--mdf-color-text-muted);
 }
 
 .mdf-block {
   padding: 1rem;
-  background-color: var(--color-secondary-transparent);
+  background-color: var(--mdf-color-secondary-transparent);
   border-radius: 3px;
-  border: 2px solid var(--color-secondary-transparent-2);
+  border: 2px solid var(--mdf-color-secondary-transparent-2);
 
   &.mdf-block-info {
-    background-color: var(--color-info-transparent);
-    border-color: var(--color-info);
+    background-color: var(--mdf-color-info-transparent);
+    border-color: var(--mdf-color-info);
   }
 
   &.mdf-block-error {
-    background-color: var(--color-error-transparent);
-    border-color: var(--color-error);
+    background-color: var(--mdf-color-error-transparent);
+    border-color: var(--mdf-color-error);
   }
 
   &.mdf-block-success {
-    background-color: var(--color-success-transparent);
-    border-color: var(--color-success);
+    background-color: var(--mdf-color-success-transparent);
+    border-color: var(--mdf-color-success);
   }
 }
 
 /* CTA */
 .mdf-link {
-  color: var(--color-primary);
-  background-color: var(--color-primary-transparent);
+  color: var(--mdf-color-primary);
+  background-color: var(--mdf-color-primary-transparent);
   padding: 1px 2px;
   border-radius: 3px;
 
   &:hover {
-    background-color: var(--color-primary-transparent-2);
+    background-color: var(--mdf-color-primary-transparent-2);
   }
 
   &:visited {
-    color: var(--color-secondary);
-    background-color: var(--color-primary-transparent);
+    color: var(--mdf-color-secondary);
+    background-color: var(--mdf-color-primary-transparent);
   }
 }
 
 .mdf-link:focus-visible,
 .mdf-button:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--mdf-color-primary);
   outline-offset: 3px;
 }
 
@@ -92,32 +92,32 @@
   align-items: center;
   padding: 0.5rem 1.5rem;
   line-height: 1.5rem;
-  background-color: var(--color-primary-light);
+  background-color: var(--mdf-color-primary-light);
   color: white;
   text-decoration: none;
   border-radius: 3px;
-  border: 2px solid var(--color-primary-light);
+  border: 2px solid var(--mdf-color-primary-light);
   font-size: 1rem;
 
   &:hover {
-    background-color: var(--color-primary);
+    background-color: var(--mdf-color-primary);
   }
 
   &.mdf-button-secondary {
-    background-color: var(--color-secondary-light);
-    border-color: var(--color-secondary-light);
+    background-color: var(--mdf-color-secondary-light);
+    border-color: var(--mdf-color-secondary-light);
 
     &:hover {
-      background-color: var(--color-secondary);
+      background-color: var(--mdf-color-secondary);
     }
   }
 
   &.mdf-button-tertiary {
-    background-color: var(--color-tertiary-light);
-    border-color: var(--color-tertiary-light);
+    background-color: var(--mdf-color-tertiary-light);
+    border-color: var(--mdf-color-tertiary-light);
 
     &:hover {
-      background-color: var(--color-tertiary);
+      background-color: var(--mdf-color-tertiary);
     }
   }
 }
@@ -125,7 +125,7 @@
 /* FORM */
 .mdf-input:focus-visible,
 .mdf-select:focus-visible {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--mdf-color-primary);
   outline-offset: 3px;
 }
 
@@ -139,12 +139,12 @@
   cursor: pointer;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   line-height: 1.5rem;
-  background-color: var(--color-primary-transparent);
+  background-color: var(--mdf-color-primary-transparent);
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 16px 12px;
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--mdf-color-primary);
   border-radius: 0.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -155,12 +155,12 @@
 
   &:hover,
   &:focus {
-    background-color: var(--color-primary-transparent-2);
+    background-color: var(--mdf-color-primary-transparent-2);
   }
 }
 
 .mdf-select:hover {
-  background-color: var(--color-primary-transparent-2);
+  background-color: var(--mdf-color-primary-transparent-2);
 }
 
 .mdf-input-control {
@@ -171,17 +171,17 @@
 .mdf-input[type="text"],
 .mdf-input[type="search"],
 .mdf-input[type="password"] {
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--mdf-color-primary);
   border-radius: 0.25rem;
   font-size: 16px;
   padding: 0.375rem 0.75rem;
   line-height: 1.5rem;
-  background-color: var(--color-primary-transparent);
+  background-color: var(--mdf-color-primary-transparent);
   width: 250px;
 
   &:hover,
   &:focus {
-    background-color: var(--color-primary-transparent-2);
+    background-color: var(--mdf-color-primary-transparent-2);
   }
 }
 
@@ -199,7 +199,7 @@
   margin: 0;
   width: 1.4em;
   height: 1.4em;
-  border: 0.15em solid var(--color-primary);
+  border: 0.15em solid var(--mdf-color-primary);
   border-radius: 0.25rem;
   padding: 0;
   cursor: pointer;
@@ -209,7 +209,7 @@
 
   &:hover,
   &:focus {
-    background-color: var(--color-primary-transparent-2);
+    background-color: var(--mdf-color-primary-transparent-2);
   }
 }
 
@@ -220,7 +220,7 @@
   clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
   transform: scale(0);
   transform-origin: bottom left;
-  box-shadow: inset 1em 1em var(--color-primary);
+  box-shadow: inset 1em 1em var(--mdf-color-primary);
   background-color: CanvasText;
 }
 
@@ -229,12 +229,12 @@
 }
 
 .mdf-checkbox:focus-visible {
-  border: 2px solid var(--color-primary);
-  outline: 2px solid var(--color-primary);
+  border: 2px solid var(--mdf-color-primary);
+  outline: 2px solid var(--mdf-color-primary);
   outline-offset: 3px;
 
   &::before {
-    box-shadow: inset 1em 1em var(--color-primary);
+    box-shadow: inset 1em 1em var(--mdf-color-primary);
   }
 }
 
@@ -242,12 +242,12 @@
 .mdf-td,
 .mdf-th {
   padding: 0.5rem;
-  border: 1px solid var(--color-secondary);
+  border: 1px solid var(--mdf-color-secondary);
 }
 
 .mdf-th,
 :nth-child(even) > .mdf-td {
-  background-color: var(--color-secondary-transparent);
+  background-color: var(--mdf-color-secondary-transparent);
 }
 
 /* UTILITIES */

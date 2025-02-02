@@ -10,7 +10,7 @@ body {
   padding: 1rem;
   min-height: 100vh;
   background: white;
-  background: var(--background-gradient);
+  background: var(--mdf-background-gradient);
 
   main {
     max-width: 900px;
