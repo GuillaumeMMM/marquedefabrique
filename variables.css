@@ -21,4 +21,10 @@
   --color-success: #3c843f;
   --color-success-transparent: #3c843f27;
   --color-text-muted: #595959;
+
+  --background-gradient: linear-gradient(
+    121deg,
+    var(--color-secondary-transparent),
+    var(--color-tertiary-transparent) 100%
+  );
 }
