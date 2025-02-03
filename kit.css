@@ -124,6 +124,7 @@
 
 /* FORM */
 .mdf-input:focus-visible,
+.mdf-textarea:focus-visible,
 .mdf-color:focus-visible,
 .mdf-select:focus-visible {
   outline: 2px solid var(--mdf-color-primary);
@@ -164,14 +165,16 @@
   background-color: var(--mdf-color-primary-transparent-2);
 }
 
-.mdf-input-control {
+.mdf-input-control,
+.mdf-textarea-control {
   display: inline-flex;
   flex-direction: column;
 }
 
 .mdf-input[type="text"],
 .mdf-input[type="search"],
-.mdf-input[type="password"] {
+.mdf-input[type="password"],
+.mdf-textarea {
   border: 2px solid var(--mdf-color-primary);
   border-radius: 0.25rem;
   font-size: 16px;
@@ -184,6 +187,11 @@
   &:focus {
     background-color: var(--mdf-color-primary-transparent-2);
   }
+}
+
+.mdf-textarea {
+  width: 320px;
+  height: 150px;
 }
 
 .mdf-checkbox-control {
