@@ -280,6 +280,8 @@
   &::-webkit-color-swatch {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     border: 2px solid black;
   }
 

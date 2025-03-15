@@ -1,4 +1,4 @@
-// Generated on Fri Mar 07 2025 from v1.0.2
+// Generated on Sat Mar 15 2025 from v1.0.2
 
 export const kit = `/* TITLES */
 .mdf-title1,
@@ -282,6 +282,8 @@ export const kit = `/* TITLES */
   &::-webkit-color-swatch {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     border: 2px solid black;
   }
 
