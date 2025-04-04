@@ -1,4 +1,4 @@
-// Generated on Sat Mar 15 2025 from v1.0.2
+// Generated on Fri Apr 04 2025 from v1.0.3
 
 export const kit = `/* TITLES */
 .mdf-title1,
@@ -69,6 +69,8 @@ export const kit = `/* TITLES */
   background-color: var(--mdf-color-primary-transparent);
   padding: 1px 2px;
   border-radius: 3px;
+  text-underline-offset: 2px;
+  text-decoration-color: hsl(from var(--mdf-color-primary) h s calc(l + 10));
 
   &:hover {
     background-color: var(--mdf-color-primary-transparent-2);
@@ -77,6 +79,9 @@ export const kit = `/* TITLES */
   &:visited {
     color: var(--mdf-color-secondary);
     background-color: var(--mdf-color-primary-transparent);
+    text-decoration-color: hsl(
+      from var(--mdf-color-secondary) h s calc(l + 10)
+    );
   }
 }
 
@@ -274,6 +279,8 @@ export const kit = `/* TITLES */
   height: 4rem;
   position: relative;
   z-index: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 
   &:focus {
     border-radius: 0.25rem;

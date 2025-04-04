@@ -1,4 +1,4 @@
-// Generated on Sat Mar 15 2025 from v1.0.2
+// Generated on Fri Apr 04 2025 from v1.0.3
 
 export const variables = `:root {
   --mdf-color-primary: #04675d;
