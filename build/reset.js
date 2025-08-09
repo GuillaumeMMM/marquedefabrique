@@ -1,4 +1,4 @@
-// Generated on Fri Apr 04 2025 from v1.0.3
+// Generated on Sat Aug 09 2025 from v1.0.5
 
 export const reset = `@layer reset {
   * {

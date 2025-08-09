@@ -1,4 +1,4 @@
-// Generated on Fri Apr 04 2025 from v1.0.3
+// Generated on Sat Aug 09 2025 from v1.0.5
 
 export const variables = `:root {
   --mdf-color-primary: #04675d;
@@ -13,8 +13,8 @@ export const variables = `:root {
 
   --mdf-color-tertiary: #482c68;
   --mdf-color-tertiary-light: #805bab;
-  --mdf-color-tertiary-transparent: #482c6827;
-  --mdf-color-tertiary-transparent-2: #482c687a;
+  --mdf-color-tertiary-transparent: #7e6d9127;
+  --mdf-color-tertiary-transparent-2: #7e6d917a;
 
   --mdf-color-error: #a43030;
   --mdf-color-error-transparent: #a4303027;
