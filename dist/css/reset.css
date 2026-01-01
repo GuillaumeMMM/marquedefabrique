@@ -1,6 +1,4 @@
-// Generated on Sat Aug 09 2025 from v1.0.5
-
-export const reset = `@layer reset {
+@layer reset {
   * {
     box-sizing: border-box;
   }
@@ -130,4 +128,3 @@ export const reset = `@layer reset {
     border-spacing: 0;
   }
 }
-`;

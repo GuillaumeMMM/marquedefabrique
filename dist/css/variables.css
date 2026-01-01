@@ -1,6 +1,4 @@
-// Generated on Sat Aug 09 2025 from v1.0.5
-
-export const variables = `:root {
+:root {
   --mdf-color-primary: #04675d;
   --mdf-color-primary-light: #048275;
   --mdf-color-primary-transparent: #bcecce3b;
@@ -30,4 +28,3 @@ export const variables = `:root {
     var(--mdf-color-tertiary-transparent) 100%
   );
 }
-`;

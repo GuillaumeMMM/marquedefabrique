@@ -1,6 +1,6 @@
-@import "./reset.css" layer(reset);
-@import "./kit.css";
-@import "./variables.css";
+@import "../src/reset.css" layer(reset);
+@import "../src/kit.css";
+@import "../src/variables.css";
 
 body {
   font-family: "Open Sans", "system-ui", sans-serif;
