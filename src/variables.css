@@ -1,30 +1,68 @@
 :root {
-  --mdf-color-primary: #04675d;
-  --mdf-color-primary-light: #048275;
-  --mdf-color-primary-transparent: #bcecce3b;
-  --mdf-color-primary-transparent-2: #bcecce7a;
 
-  --mdf-color-secondary: #534534;
-  --mdf-color-secondary-light: #806b53;
-  --mdf-color-secondary-transparent: #b1a49527;
-  --mdf-color-secondary-transparent-2: #b1a4957a;
+  /* PRIMITIVES */
+  --mdf-color-grey-100: rgb(36, 36, 36);
+  --mdf-color-grey-200: rgb(51, 51, 51);
+  --mdf-color-grey-300: rgb(71, 71, 71);
+  --mdf-color-grey-400: rgb(101, 101, 101);
+  --mdf-color-grey-500: rgb(135, 135, 135);
+  --mdf-color-grey-600: rgb(170, 170, 170);
+  --mdf-color-grey-700: rgb(201, 201, 201);
+  --mdf-color-grey-800: rgb(225, 225, 225);
+  --mdf-color-grey-900: rgb(242, 242, 242);
+  --mdf-color-grey-1000: rgb(250, 250, 250);
 
-  --mdf-color-tertiary: #482c68;
-  --mdf-color-tertiary-light: #805bab;
-  --mdf-color-tertiary-transparent: #7e6d9127;
-  --mdf-color-tertiary-transparent-2: #7e6d917a;
+  --mdf-color-blue-100: rgb(0, 99, 192);
+  --mdf-color-blue-500: hsl(from var(--mdf-color-blue-100) h s calc(l + 20));
+  --mdf-color-blue-900: hsl(from var(--mdf-color-blue-100) h s calc(l + 60));
 
-  --mdf-color-error: #a43030;
-  --mdf-color-error-transparent: #a4303027;
-  --mdf-color-info: #167792;
-  --mdf-color-info-transparent: #16779227;
-  --mdf-color-success: #3c843f;
-  --mdf-color-success-transparent: #3c843f27;
-  --mdf-color-text-muted: #595959;
+  --mdf-color-purple-100: rgb(83, 47, 128);
+  --mdf-color-purple-500: hsl(from var(--mdf-color-purple-100) h s calc(l + 20));
+  --mdf-color-purple-900: hsl(from var(--mdf-color-purple-100) h s calc(l + 60));
 
-  --mdf-background-gradient: linear-gradient(
-    121deg,
-    var(--mdf-color-secondary-transparent),
-    var(--mdf-color-tertiary-transparent) 100%
-  );
+  --mdf-color-green-100: rgb(49, 148, 59);
+  --mdf-color-green-500: hsl(from var(--mdf-color-green-100) h s calc(l + 20));
+  --mdf-color-green-900: hsl(from var(--mdf-color-green-100) h s calc(l + 55));
+
+  --mdf-color-red-100: rgb(175, 0, 35);
+  --mdf-color-red-500: hsl(from var(--mdf-color-red-100) h s calc(l + 20));
+  --mdf-color-red-900: hsl(from var(--mdf-color-red-100) h s calc(l + 62));
+
+  --mdf-color-yellow-100: rgb(255, 207, 33);
+  --mdf-color-yellow-500: hsl(from var(--mdf-color-yellow-100) h s calc(l + 16));
+  --mdf-color-yellow-900: hsl(from var(--mdf-color-yellow-100) h s calc(l + 38));
+
+  --mdf-color-transparent-100: rgba(0, 0, 0, 0.1);
+  --mdf-color-transparent-200: rgba(0, 0, 0, 0.2);
+  --mdf-color-transparent-300: rgba(0, 0, 0, 0.3);
+  --mdf-color-transparent-500: rgba(0, 0, 0, 0.5);
+
+
+  /* SEMANTIC */
+  --mdf-color-text-default: var(--mdf-color-grey-100);
+  --mdf-color-text-muted: var(--mdf-color-grey-200);
+  --mdf-color-text-brand-primary-default: var(--mdf-color-blue-100);
+  --mdf-color-text-brand-primary-muted: var(--mdf-color-blue-500);
+  --mdf-color-text-brand-secondary-default: var(--mdf-color-purple-100);
+  --mdf-color-text-brand-secondary-muted: var(--mdf-color-purple-500);
+
+  --mdf-color-background-default: var(--mdf-color-grey-1000);
+  --mdf-color-background-muted: var(--mdf-color-grey-900);
+  --mdf-color-background-brand-primary: var(--mdf-color-blue-900);
+  --mdf-color-background-brand-secondary: var(--mdf-color-purple-900);
+  --mdf-color-background-error: var(--mdf-color-red-900);
+  --mdf-color-background-warning: var(--mdf-color-yellow-900);
+  --mdf-color-background-success: var(--mdf-color-green-900);
+
+  --mdf-color-border-default: var(--mdf-color-grey-700);
+  --mdf-color-border-muted: var(--mdf-color-grey-800);
+  --mdf-color-border-brand-primary: var(--mdf-color-blue-500);
+  --mdf-color-border-brand-secondary: var(--mdf-color-purple-500);
+  --mdf-color-border-error: var(--mdf-color-red-500);
+  --mdf-color-border-warning: var(--mdf-color-yellow-500);
+  --mdf-color-border-success: var(--mdf-color-green-500);
+
+  --mdf-color-outline-default: var(--mdf-color-grey-200);
+
+  --mdf-color-box-shadow-default:
 }

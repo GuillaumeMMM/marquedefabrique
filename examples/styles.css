@@ -3,14 +3,15 @@
 @import "../src/variables.css";
 
 body {
-  font-family: "Open Sans", "system-ui", sans-serif;
-  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
+
   line-height: 1.5;
   padding: 1rem;
   min-height: 100vh;
-  background: white;
-  background: var(--mdf-background-gradient);
+  background-color: var(--mdf-color-background-primary);
 
   main {
     max-width: 900px;
@@ -20,6 +21,12 @@ body {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+
+      .block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
     }
 
     .colors {
