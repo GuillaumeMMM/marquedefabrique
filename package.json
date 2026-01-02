@@ -1,6 +1,6 @@
 {
   "name": "@guillaumemmm/marquedefabrique",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Marque de Fabrique is a minimalistic UI kit. It includes a set of core styles and CSS variables centralizing design elements to maintain consistency across personal projects.",
   "main": "index.css",
   "type": "module",
