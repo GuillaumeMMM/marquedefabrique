@@ -1,3 +1,7 @@
+body {
+  color: var(--mdf-color-text-default);
+}
+
 /* TITLES */
 .mdf-title1,
 .mdf-title2,
