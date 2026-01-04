@@ -501,6 +501,20 @@ body {
   }
 }
 
+/* LIST */
+.mdf-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: inside;
+
+  .mdf-list-item {
+    &::marker {
+      color: var(--mdf-color-text-muted);
+    }
+  }
+}
+
 /* UTILITIES */
 .visually-hidden {
   position: absolute !important;
