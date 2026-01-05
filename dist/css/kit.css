@@ -105,7 +105,7 @@ body {
   --text-luminosity-reduction: 85;
 
   color: var(--mdf-color-text-default);
-  background-color: var(--mdf-color-background-muted);
+  background-color: var(--mdf-color-background-subtle);
 
   text-decoration: underline;
   text-underline-offset: 1.5px;
@@ -117,7 +117,7 @@ body {
   }
 
   &:hover {
-    background-color: hsl(from var(--mdf-color-background-muted) h s calc(l - 5));
+    background-color: hsl(from var(--mdf-color-background-subtle) h s calc(l - 5));
 
     &:visited {
       background-color: hsl(from var(--mdf-color-background-brand-secondary) h s calc(l - 5));
@@ -414,7 +414,7 @@ body {
   line-height: 1rem;
   padding: 1px 3px;
   border-radius: 5px;
-  background-color: var(--mdf-color-background-muted);
+  background-color: var(--mdf-color-background-subtle);
   font-weight: 600;
   font-family: monospace;
 }
@@ -511,7 +511,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  list-style: inside;
+  list-style: disc;
+  padding-left: 1em;
 
   .mdf-list-item {
     &::marker {
