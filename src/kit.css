@@ -84,10 +84,8 @@ body {
 /* BADGE */
 .mdf-badge {
   display: inline-block;
-  --background: var(--mdf-color-background-default);
-  --background-dark: hsl(from var(--background) h s calc(l - 5));
-  background: var(--background);
-  background: linear-gradient(var(--background), var(--background-dark));
+  background: var(--mdf-color-background-muted);
+  background: linear-gradient(var(--mdf-color-background-muted), var(--mdf-color-background-subtle));
 
   padding: 5px 7px;
   border-radius: 8px;
@@ -426,6 +424,7 @@ body {
   padding: 10px 1rem;
   border-radius: 8px;
   background-color: var(--mdf-color-background-brand-primary);
+  border: 1px solid var(--mdf-color-border-brand-primary);
   font-family: monospace;
   margin: 0;
   box-shadow: 0px 1px 1px var(--mdf-color-transparent-300);
@@ -479,8 +478,9 @@ body {
     }
 
     &:hover,
-    &.mdf-menu-item-current {
-      background: linear-gradient(var(--mdf-color-background-default), var(--mdf-color-background-muted));
+    &.mdf-menu-item-current,
+    &:focus-visible {
+      background: linear-gradient(var(--mdf-color-background-muted), var(--mdf-color-background-subtle));
       box-shadow: 0px 1px 2px var(--mdf-color-transparent-300);
 
       .mdf-menu-item-dot {
@@ -497,6 +497,11 @@ body {
 
     &:active {
       box-shadow: 0px 0px 1px var(--mdf-color-transparent-300);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--mdf-color-outline-default);
+      outline-offset: 3px;
     }
   }
 }
