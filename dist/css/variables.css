@@ -15,10 +15,12 @@
   --mdf-color-blue-0: hsl(from var(--mdf-color-blue-100) h s calc(l - 20));
   --mdf-color-blue-100: rgb(0, 99, 192);
   --mdf-color-blue-500: hsl(from var(--mdf-color-blue-100) h s calc(l + 20));
+  --mdf-color-blue-700: hsl(from var(--mdf-color-blue-100) h s calc(l + 40));
   --mdf-color-blue-900: hsl(from var(--mdf-color-blue-100) h s calc(l + 60));
 
   --mdf-color-purple-100: rgb(70, 36, 112);
   --mdf-color-purple-500: hsl(from var(--mdf-color-purple-100) h s calc(l + 20));
+  --mdf-color-purple-700: hsl(from var(--mdf-color-purple-700) h s calc(l + 40));
   --mdf-color-purple-900: hsl(from var(--mdf-color-purple-100) h calc(s + 50) calc(l + 65));
 
   --mdf-color-green-0: hsl(from var(--mdf-color-green-100) h s calc(l - 20));
@@ -71,9 +73,44 @@
   &[data-theme="dark"] {
     --mdf-color-text-default: var(--mdf-color-grey-900);
     --mdf-color-text-muted: var(--mdf-color-grey-800);
-    --mdf-color-text-brand-primary-default: var(--mdf-color-blue-900);
+    --mdf-color-text-brand-primary-default: var(--mdf-color-blue-700);
     --mdf-color-text-brand-primary-muted: var(--mdf-color-blue-500);
-    --mdf-color-text-brand-secondary-default: var(--mdf-color-purple-900);
+    --mdf-color-text-brand-secondary-default: var(--mdf-color-purple-700);
+    --mdf-color-text-brand-secondary-muted: var(--mdf-color-purple-500);
+
+    --mdf-color-background-default: var(--mdf-color-grey-100);
+    --mdf-color-background-muted: var(--mdf-color-grey-200);
+    --mdf-color-background-subtle: var(--mdf-color-grey-300);
+    --mdf-color-background-brand-primary: var(--mdf-color-blue-0);
+    --mdf-color-background-brand-secondary: var(--mdf-color-purple-100);
+    --mdf-color-background-error: var(--mdf-color-red-100);
+    --mdf-color-background-warning: var(--mdf-color-yellow-0);
+    --mdf-color-background-success: var(--mdf-color-green-0);
+
+    --mdf-color-border-default: var(--mdf-color-grey-300);
+    --mdf-color-border-muted: var(--mdf-color-grey-400);
+    --mdf-color-border-brand-primary: var(--mdf-color-blue-500);
+    --mdf-color-border-brand-secondary: var(--mdf-color-purple-500);
+    --mdf-color-border-error: var(--mdf-color-red-500);
+    --mdf-color-border-warning: var(--mdf-color-yellow-500);
+    --mdf-color-border-success: var(--mdf-color-green-500);
+
+    --mdf-color-outline-default: var(--mdf-color-grey-800);
+
+    --mdf-color-transparent-100: rgba(0, 0, 0, 0.6);
+    --mdf-color-transparent-200: rgba(0, 0, 0, 0.7);
+    --mdf-color-transparent-300: rgba(0, 0, 0, 0.8);
+    --mdf-color-transparent-500: rgba(0, 0, 0, 0.9);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mdf-color-text-default: var(--mdf-color-grey-900);
+    --mdf-color-text-muted: var(--mdf-color-grey-800);
+    --mdf-color-text-brand-primary-default: var(--mdf-color-blue-700);
+    --mdf-color-text-brand-primary-muted: var(--mdf-color-blue-500);
+    --mdf-color-text-brand-secondary-default: var(--mdf-color-purple-700);
     --mdf-color-text-brand-secondary-muted: var(--mdf-color-purple-500);
 
     --mdf-color-background-default: var(--mdf-color-grey-100);

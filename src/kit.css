@@ -253,6 +253,8 @@ body {
   box-shadow: 0px 1px 1px var(--mdf-color-transparent-300);
   font-family: inherit;
 
+  color: var(--mdf-color-text-default);
+
   &:hover,
   &:focus {
     background-color: var(--mdf-color-background-default);
