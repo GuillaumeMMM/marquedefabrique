@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [
     viteStaticCopy({
       targets: [
-        { src: 'src/**.css', dest: 'css' },
+        { src: 'src/**/*.css', dest: 'css', rename: { stripBase: true } },
       ],
     }),
   ],
