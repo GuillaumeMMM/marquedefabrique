@@ -131,70 +131,74 @@ body {
 }
 
 /* BUTTON */
-.mdf-button-container {
-  border: 3px solid transparent;
-  border-radius: 11px;
-  background-clip: padding-box;
-  position: relative;
-  display: inline-block;
+.mdf-button {
+  border: 2px solid var(--mdf-color-border-brand-primary);
+  padding: 12px 14px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px rgb(from var(--mdf-color-border-brand-primary) r g b / calc(alpha - 0.6));
+  font-weight: 600;
+  background: var(--mdf-color-background-brand-primary);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: box-shadow 0.1s ease-out, background-color 0.1s ease-out;
+  color: var(--mdf-color-text-default);
 
-  --color: var(--mdf-color-background-muted);
-  --color-dark: hsl(from var(--color) h s calc(l - 2));
-  --color-border-light: hsl(from var(--color) h s calc(l + 3));
-  --color-border-dark: hsl(from var(--color) h s calc(l - 5));
+  &:hover,
+  &:focus-visible {
+    box-shadow: 0px 0px 1px var(--mdf-color-border-brand-primary);
+    background: hsl(from var(--mdf-color-background-brand-primary) h s calc(l - 5));
+  }
 
-  --color-border-light-2: hsl(from var(--color) h calc(s - 10) l);
-  --color-border-dark-2: hsl(from var(--color) calc(h) s calc(l - 20));
+  &:focus-visible {
+    outline: 2px solid var(--mdf-color-outline-default);
+    outline-offset: 3px;
+  }
 
-  &:hover {
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      margin: -3px;
-      border-radius: inherit;
-      background: linear-gradient(var(--color-border-light-2), var(--color-border-dark-2));
+  &.mdf-button-brand-secondary {
+    box-shadow: 2px 2px 0px rgb(from var(--mdf-color-border-brand-secondary) r g b / calc(alpha - 0.6));
+    background: var(--mdf-color-background-brand-secondary);
+    border-color: var(--mdf-color-border-brand-secondary);
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0px 0px 1px var(--mdf-color-border-brand-secondary);
+      background: hsl(from var(--mdf-color-background-brand-secondary) h s calc(l - 5));
     }
   }
 
-  .mdf-button {
-    color: inherit;
-    background: linear-gradient(var(--color-border-light) 10%, var(--color-border-dark) 50%);
-    cursor: pointer;
-    line-height: 1.5rem;
-    text-decoration: none;
-    border-radius: 8px;
-    box-shadow: 0px 0px 2px var(--mdf-color-transparent-300);
-    font-size: 1rem;
-    padding: 0;
-    border: none;
-    transition: box-shadow 0.2s;
+  &.mdf-button-error {
+    box-shadow: 2px 2px 0px rgb(from var(--mdf-color-border-error) r g b / calc(alpha - 0.6));
+    background: var(--mdf-color-background-error);
+    border-color: var(--mdf-color-border-error);
 
-    .mdf-button-content {
-      display: flex;
-      align-items: center;
-      margin: 5px;
-      border-radius: 5px;
-      padding: 5px 1rem;
-      background-color: var(--color);
-      transition: background-color 0.2s
-    }
-
-    &:active {
-      box-shadow: 0px 0px 1px var(--mdf-color-transparent-200);
-
-      .mdf-button-content {
-        background-color: var(--color-dark);
-      }
-    }
-
+    &:hover,
     &:focus-visible {
-      outline: 2px solid var(--mdf-color-outline-default);
-      outline-offset: 3px;
+      box-shadow: 0px 0px 1px var(--mdf-color-border-error);
+      background: hsl(from var(--mdf-color-background-error) h s calc(l - 5));
+    }
+  }
+
+  &.mdf-button-success {
+    box-shadow: 2px 2px 0px rgb(from var(--mdf-color-border-success) r g b / calc(alpha - 0.6));
+    background: var(--mdf-color-background-success);
+    border-color: var(--mdf-color-border-success);
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0px 0px 1px var(--mdf-color-border-success);
+      background: hsl(from var(--mdf-color-background-success) h s calc(l - 5));
+    }
+  }
+
+  &.mdf-button-warning {
+    box-shadow: 2px 2px 0px rgb(from var(--mdf-color-border-warning) r g b / calc(alpha - 0.6));
+    background: var(--mdf-color-background-warning);
+    border-color: var(--mdf-color-border-warning);
+
+    &:hover,
+    &:focus-visible {
+      box-shadow: 0px 0px 1px var(--mdf-color-border-warning);
+      background: hsl(from var(--mdf-color-background-warning) h s calc(l - 5));
     }
   }
 }
