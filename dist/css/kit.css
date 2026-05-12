@@ -260,11 +260,11 @@ body {
   color: var(--mdf-color-text-default);
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--mdf-color-background-default);
   }
 
-  &:focus {
+  &:focus-visible {
     outline: 2px solid var(--mdf-color-outline-default);
     outline-offset: 3px;
   }
@@ -299,7 +299,7 @@ body {
   place-content: center;
 
   &:hover,
-  &:focus {
+  &:focus-visible {
     background-color: var(--mdf-color-background-default);
   }
 }
