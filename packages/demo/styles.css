@@ -30,7 +30,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(var(--mdf-color-background-brand-secondary), transparent);
+    background: linear-gradient(var(--mdf-color-background-brand-primary), transparent);
     position: relative;
 
     .title {
