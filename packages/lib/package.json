@@ -1,0 +1,28 @@
+{
+  "name": "@guillaumemmm/marquedefabrique",
+  "version": "2.2.1",
+  "scripts": {
+    "build": "vite build"
+  },
+  "description": "Marque de Fabrique is a minimalistic UI kit. It includes a set of core styles and CSS variables centralizing design elements to maintain consistency across personal projects.",
+  "main": "dist/js/kit.js",
+  "style": "dist/css/index.css",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GuillaumeMMM/marquedefabrique.git"
+  },
+  "author": "guillaumemmm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GuillaumeMMM/marquedefabrique/issues"
+  },
+  "homepage": "https://github.com/GuillaumeMMM/marquedefabrique#readme",
+  "devDependencies": {
+    "vite": "8.0.10",
+    "vite-plugin-static-copy": "4.1.0"
+  }
+}
