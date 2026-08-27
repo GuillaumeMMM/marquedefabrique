@@ -452,6 +452,16 @@ body {
   }
 }
 
+/* KEYBOARD */
+.mdf-kbd {
+  padding: 2px 4px;
+  border-radius: 3px;
+  border: 1px solid var(--mdf-color-border-default);
+  background-color: var(--mdf-color-background-subtle);
+  font-weight: 500;
+  font-family: monospace;
+}
+
 /* LIST */
 .mdf-list {
   display: flex;
