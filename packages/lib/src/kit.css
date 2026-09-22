@@ -269,52 +269,116 @@ body {
 }
 
 .mdf-checkbox {
-  font-size: 1rem;
+  --width: 1.5rem;
+  --height: 1.5rem;
+
   display: flex;
   align-items: center;
-  gap: 0.5em;
-  cursor: pointer;
-}
-
-.mdf-checkbox-field {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-  width: 1.4em;
-  height: 1.4em;
-  border: 0.15em solid var(--mdf-color-border-brand-primary);
-  background-color: var(--mdf-color-background-brand-primary);
-  border-radius: 0.25rem;
-  padding: 0;
+  gap: 10px;
   cursor: pointer;
 
-  display: grid;
-  place-content: center;
+  .mdf-checkbox-input {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: var(--width);
+    height: var(--width);
 
-  &:hover,
-  &:focus-visible {
-    background-color: var(--mdf-color-background-default);
+    .mdf-checkbox-field {
+      -webkit-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      border-radius: 5px;
+      width: var(--width);
+      height: var(--width);
+      border: 1px solid var(--mdf-color-text-muted);
+      background-color: var(--mdf-color-background-default);
+      transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out;
+
+      &:checked {
+        background-color: var(--mdf-color-blue-500);
+        border-color: var(--mdf-color-blue-100);
+      }
+
+
+      &:focus-visible {
+        outline: 2px solid var(--mdf-color-outline-default);
+        outline-offset: 2px;
+      }
+    }
+
+    &:has(input:checked) {
+      .mdf-checkbox-field:before {
+        display: none;
+      }
+
+      .mdf-checkbox-tick {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        stroke-dasharray: 1;
+        stroke-dashoffset: 1;
+        animation: checkbox-draw-tick 0.15s 0.1s ease forwards;
+
+        path {
+          color: white;
+          stroke-width: 1.5px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .mdf-checkbox-tick {
+          stroke-dashoffset: 0;
+          animation: none;
+        }
+      }
+    }
+
+    &:not(:has(input:checked)) {
+      .mdf-checkbox-tick {
+        display: none;
+      }
+    }
+  }
+
+  &:hover .mdf-checkbox-field {
+    background-color: var(--mdf-color-background-muted);
   }
 }
 
-.mdf-checkbox-field::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  clip-path: path("M 6.9101 9.3579 C 6.4728 8.9207 5.7636 8.9207 5.3259 9.3579 S 4.8887 10.5044 5.3259 10.9421 L 7.4069 13.023 C 8.056 13.6722 9.108 13.6722 9.7571 13.023 L 10.1661 12.614 L 6.9101 9.3579 Z M 14.5261 6.6699 C 14.0888 6.2327 13.3796 6.2327 12.9419 6.6699 L 8.582 11.0299 L 10.1661 12.614 L 14.5261 8.2541 C 14.9633 7.8164 14.9633 7.1072 14.5261 6.6699 Z");
-  transform: scale(0);
-  transform-origin: bottom left;
-  box-shadow: inset 1em 1em var(--mdf-color-text-brand-primary-default);
-  background-color: CanvasText;
+.mdf-checkbox-box {
+  border: 1px solid var(--mdf-color-text-muted);
+  padding: 1rem;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: var(--mdf-color-background-muted);
+  }
+
+  &:has(input:checked) {
+    background-color: var(--mdf-color-background-brand-primary);
+    border-color: var(--mdf-color-border-brand-primary);
+  }
+
+  &:has(.mdf-checkbox-field:focus-visible) {
+    outline: 1px solid var(--mdf-color-outline-default);
+    outline-offset: 2px;
+
+    .mdf-checkbox-field {
+      outline: none;
+    }
+  }
 }
 
-.mdf-checkbox-field:checked::before {
-  transform: scale(1);
-}
-
-.mdf-checkbox-field:focus-visible {
-  outline: 2px solid var(--mdf-color-outline-default);
-  outline-offset: 3px;
+@keyframes checkbox-draw-tick {
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
 .mdf-color {
