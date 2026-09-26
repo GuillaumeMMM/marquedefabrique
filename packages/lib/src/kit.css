@@ -237,6 +237,9 @@ body {
 }
 
 .mdf-input-field[type="text"],
+.mdf-input-field[type="number"],
+.mdf-input-field[type="phone"],
+.mdf-input-field[type="email"],
 .mdf-input-field[type="search"],
 .mdf-input-field[type="password"],
 .mdf-textarea-field {
